@@ -1,20 +1,17 @@
-
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
 TARGET = FuncA
 
 all: $(TARGET)
 
-$(TARGET):main.o FuncA.o
-    $(CXX) $(CXXFLAGS) -o $(TARGET) main.o FuncA.o
+$(TARGET): main.o FuncA.o
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o FuncA.o
 
 main.o: main.cpp FuncA.h
-    $(CXX) $(CXXFLAGS) -c main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp
 
-funcA.o: FuncA.cpp FuncA.h
-    $(CXX) $(CXXFLAGS) -c FuncA.cpp
+FuncA.o: FuncA.cpp FuncA.h
+	$(CXX) $(CXXFLAGS) -c FuncA.cpp
 
 clean:
-    rm -f *.o $(TARGET)
-
-
+	rm -f *.o $(TARGET)
