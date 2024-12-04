@@ -1,13 +1,11 @@
-AUTOMAKE_OPTIONS = foreign
+AUTOMAKE_OPTIONS = foreign subdir-objects
 bin_PROGRAMS = myprogram
 myprogram_SOURCES = main.cpp FuncA.cpp FuncA.h
-
+check_PROGRAMS = test
+test_SOURCES = tests/testFuncA.cpp FuncA.cpp
 PACKAGE = myprogram
 VERSION = 1.0
 PACKAGE_BUGREPORT = rovniygrishaaa@gmail.com
-
-CTRLF_DIR = $(CURDIR)/debian
-CTRLF_NAME = $(CTRLF_DIR)/control
 
 .PHONY: deb debug
 
@@ -23,4 +21,7 @@ debug:
 	@echo "${PACKAGE}"
 	@echo "${VERSION}"
 	@echo "${PACKAGE_BUGREPORT}"
+
+check: test
+	@./test
 

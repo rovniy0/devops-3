@@ -12,6 +12,6 @@ int main() {
     catch (const std::invalid_argument& e) {
         std::cerr << e.what() << std::endl;
     }
-    system("pause");
+
     return 0;
 }
