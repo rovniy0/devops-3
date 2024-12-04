@@ -1,0 +1,13 @@
+Package: myprogram-dbgsym
+Package-Type: ddeb
+Source: myprogram
+Version: 1.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: rovniygrishaaa@gmail.com
+Installed-Size: 30
+Depends: myprogram (= 1.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for myprogram
+Build-Ids: 8993a2a6a4a83ac77603a3765cb3b522a5037483

@@ -1,0 +1,11 @@
+Package: myprogram
+Version: 1.0-1
+Architecture: amd64
+Maintainer: rovniygrishaaa@gmail.com
+Installed-Size: 23
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 4.4)
+Section: utils
+Priority: optional
+Homepage: https://your.homepage.com
+Description: myprogram
+ something short description of what myrogram does =3

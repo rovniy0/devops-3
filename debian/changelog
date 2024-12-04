@@ -1,5 +1,5 @@
-program (1.0-1) unstable; urgency=medium
+myprogram (1.0-1) unstable; urgency=medium
 
   * Initial release.
 
- -- Grisha Rovniy <rovniygrishaaa@gmail.com>  $(date -R)
+ -- Grisha Rovniy <rovniygrishaaa@gmail.com>  Wed, 04 Dec 2024 12:34:56 +0200
