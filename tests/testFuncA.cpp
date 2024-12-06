@@ -13,7 +13,7 @@ void testFuncA() {
     double expected = 0.5493;
     assert(abs(result - expected) < 0.0001);
 
-    int n = 500000000;
+    int n = 500000000; // with the smaller value the test runs too fust (verified :3 )
     double x = 0.5;
 
     auto start = std::chrono::high_resolution_clock::now();

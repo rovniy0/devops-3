@@ -1,6 +1,8 @@
 #include <iostream>
 #include "FuncA.h"
 
+int CreateHTTPserver();
+
 int main() {
     FuncA seventeenth_exmpl;
     double x = 0.5;
@@ -12,7 +14,7 @@ int main() {
     catch (const std::invalid_argument& e) {
         std::cerr << e.what() << std::endl;
     }
-
+     CreateHTTPserver();
     return 0;
 
 }
