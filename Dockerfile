@@ -20,3 +20,4 @@ RUN apk add --no-cache libstdc++ libc6-compat
 COPY --from=build /home/optima/devops-3/myprogram /usr/local/bin/myprogram
 ENTRYPOINT ["/usr/local/bin/myprogram"]
 
+
